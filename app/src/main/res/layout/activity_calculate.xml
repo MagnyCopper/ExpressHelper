@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hanchangming.expresshelper.CalculateActivity">
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="重量"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weight"
+        android:hint="高度"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/width"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/height"
+        android:hint="宽度"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/length"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/width"
+        android:hint="长度"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/destinationProvince"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/length"
+        android:entries="@array/destinationProvinceList" />
+
+    <Spinner
+        android:id="@+id/destinationCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/destinationProvince" />
+
+    <TextView
+        android:id="@+id/localShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/destinationCity"
+        android:gravity="center"
+        android:text="位置信息获取中"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/localShow"
+        android:layout_centerHorizontal="true"
+        android:text="计算" />
+</RelativeLayout>

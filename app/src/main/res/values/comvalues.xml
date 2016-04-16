@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="compenyList">
+        <item>顺丰速运</item>
+        <item>韵达快运</item>
+        <item>中通速递</item>
+    </string-array>
+</resources>

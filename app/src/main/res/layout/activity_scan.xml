@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hanchangming.expresshelper.scanActivity">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comSelecter"
+        android:entries="@array/compenyList"/>
+
+    <EditText
+        android:id="@+id/ExpressNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="快递单号"
+        android:inputType="number"
+        android:layout_below="@+id/comSelecter"/>
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ExpressNumber"
+        android:text="查询" />
+
+</RelativeLayout>
